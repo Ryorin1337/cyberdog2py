@@ -1,0 +1,47 @@
+# Python 字节码与缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 打包 / 安装产物
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# 虚拟环境
+.venv/
+venv/
+env/
+ENV/
+
+# 测试与静态检查缓存
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# IDE 配置（PyCharm）
+.idea/
+
+# VS Code
+.vscode/
+
+# 环境变量与本地机密（SSH 密码、token 等不要提交）
+.env
+.env.*
+*.pem
+*.key
+
+# 日志与临时文件
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# 示例脚本生成的图片（AI 相机取帧输出）
+/frame.jpg
+examples/frame.jpg

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cyberdog2"
+version = "0.1.0"
+description = "小米 CyberDog 2 的 Python 开发库：SSH + 狗端代理，电脑无需安装 ROS"
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = []
+
+[project.optional-dependencies]
+remote = ["paramiko>=2.7"]
+image = ["numpy", "pillow"]
+dev = ["pytest", "paramiko>=2.7", "numpy", "pillow"]
+
+[tool.setuptools]
+packages = ["cyberdog2", "cyberdog2.backends", "cyberdog2.agent"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
